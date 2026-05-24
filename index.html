@@ -1,467 +1,664 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PENS Tech Merch</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <title>PENS Tech Merch - Official Student Merchandise</title>
+    <meta name="description" content="Merchandise eksklusif mahasiswa PENS bertema coding dan teknologi. Gantungan kunci akrilik premium, sticker pack coding, dan paket hemat harga mahasiswa." />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- NAV -->
-    <nav>
-      <div class="nav-logo">
-        <!-- PENS logo SVG -->
-        <svg
-          class="logo-icon"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="20" cy="20" r="18" fill="#1a3a6b" />
-          <circle cx="14" cy="16" r="4" fill="#f5c518" />
-          <circle cx="26" cy="16" r="4" fill="#f5c518" />
-          <circle cx="20" cy="26" r="4" fill="#f5c518" />
-          <line
-            x1="14"
-            y1="16"
-            x2="26"
-            y2="16"
-            stroke="#f5c518"
-            stroke-width="1.5"
-          />
-          <line
-            x1="14"
-            y1="16"
-            x2="20"
-            y2="26"
-            stroke="#f5c518"
-            stroke-width="1.5"
-          />
-          <line
-            x1="26"
-            y1="16"
-            x2="20"
-            y2="26"
-            stroke="#f5c518"
-            stroke-width="1.5"
-          />
-        </svg>
-        <span class="logo-text">PENS <span>Tech</span> Merch</span>
+    <nav id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="nav-logo">
+          <!-- PENS logo SVG -->
+          <svg
+            class="logo-icon"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20" cy="20" r="18" fill="#1a3a6b" />
+            <circle cx="14" cy="16" r="4" fill="#f5c518" />
+            <circle cx="26" cy="16" r="4" fill="#f5c518" />
+            <circle cx="20" cy="26" r="4" fill="#f5c518" />
+            <line
+              x1="14"
+              y1="16"
+              x2="26"
+              y2="16"
+              stroke="#f5c518"
+              stroke-width="1.5"
+            />
+            <line
+              x1="14"
+              y1="16"
+              x2="20"
+              y2="26"
+              stroke="#f5c518"
+              stroke-width="1.5"
+            />
+            <line
+              x1="26"
+              y1="16"
+              x2="20"
+              y2="26"
+              stroke="#f5c518"
+              stroke-width="1.5"
+            />
+          </svg>
+          <span class="logo-text">PENS <span>Tech</span> Merch</span>
+        </a>
+
+        <div class="nav-right">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kalkulator">Kalkulator</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+
+          <!-- Theme Toggle Button -->
+          <button class="theme-toggle-btn" id="themeToggle" title="Ganti Tema">
+            <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Sun Icon (shown in dark mode to switch to light) -->
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <a href="#kalkulator" class="btn btn-primary">Pesan Sekarang</a>
+
+          <!-- Mobile Hamburger -->
+          <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#produk">Produk</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-      <button class="nav-btn">Pesan Sekarang</button>
     </nav>
 
     <!-- HERO -->
-    <div style="max-width: 1100px; margin: 0 auto">
-      <div class="hero">
+    <header class="hero-section">
+      <div class="container hero-grid">
         <div class="hero-left">
           <div class="hero-tag">🎓 Official PENS Merchandise</div>
           <h1>
-            Gantungan Kunci & Stiker <span>Bertema Coding</span> / Anak Teknik
+            Gantungan Kunci & Stiker <span class="tech-highlight">Bertema Coding</span>
           </h1>
           <p class="hero-sub">
-            Merch eksklusif untuk mahasiswa dan alumni Politeknik Elektronika
-            Negeri Surabaya. Desain khas dunia teknik, bahan premium, harga
-            mahasiswa.
+            Ekspresikan dirimu sebagai mahasiswa teknik sejati. Koleksi eksklusif gantungan kunci akrilik dan sticker pack developer berkualitas premium dengan harga mahasiswa Politeknik Elektronika Negeri Surabaya.
           </p>
           <div class="hero-btns">
-            <a href="#produk" class="btn btn-primary">Lihat Produk</a>
-            <a href="#kontak" class="btn btn-yellow">Pesan via WA ↗</a>
+            <a href="#produk" class="btn btn-primary">Lihat Katalog</a>
+            <a href="#kalkulator" class="btn btn-yellow">Mulai Hitung Pesanan</a>
           </div>
         </div>
 
         <div class="hero-visual">
-          <div class="merch-card featured">
-            <span class="merch-emoji">💻</span>
-            <div>
-              <div class="merch-label">Stiker Pack</div>
-              <div class="merch-name">Coding Life × 5</div>
-              <div class="merch-price">Rp 20.000</div>
+          <div class="visual-scene">
+            <div class="visual-card visual-card-1">
+              <span class="badge">&lt;sticker_pack&gt;</span>
+              <h3>Coding Life Pack</h3>
+              <p class="price">Rp 5.000</p>
             </div>
-          </div>
-          <div class="merch-card">
-            <span class="merch-emoji">🔑</span>
-            <div class="merch-label">Ganci</div>
-            <div class="merch-name">Logo PENS Acrylic</div>
-            <div class="merch-price">Rp 15.000</div>
-          </div>
-          <div class="merch-card">
-            <span class="merch-emoji">⚡</span>
-            <div class="merch-label">Stiker</div>
-            <div class="merch-name">PENS Electric</div>
-            <div class="merch-price">Rp 5.000</div>
+            <div class="visual-card visual-card-2">
+              <span class="badge">&lt;keychain&gt;</span>
+              <h3>Logo PENS Acrylic</h3>
+              <p class="price">Rp 8.000</p>
+            </div>
+            <div class="visual-card visual-card-3">
+              <span class="badge">&lt;bundle&gt;</span>
+              <h3>Paket Hemat PENS</h3>
+              <p class="price">Rp 12.500</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <hr />
-
-    <!-- PRICE LIST -->
-    <div class="section" id="produk">
-      <div class="section-label">💙 Price List 💛</div>
-      <div class="section-title">Harga Produk</div>
-
-      <div
-        style="
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-          gap: 1rem;
-          margin-top: 0.5rem;
-        "
-      >
-        <div
-          style="
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.75rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-          "
-        >
-          <img
-            src="assets/ganci.jpeg"
-            alt="Logo PENS"
-            style="width: 100px; margin: 0 auto"
-          />
-          <div
-            style="
-              font-size: 12px;
-              font-weight: 700;
-              text-transform: uppercase;
-              letter-spacing: 0.08em;
-              color: var(--muted);
-            "
-          >
-            Keychain
-          </div>
-          <div
-            style="
-              font-size: 28px;
-              font-weight: 800;
-              color: var(--navy);
-              letter-spacing: -0.02em;
-            "
-          >
-            Rp 8.000
-          </div>
-          <a
-            href="#kontak"
-            class="btn btn-outline"
-            style="margin-top: 0.75rem; text-align: center; font-size: 13px"
-            >Pesan</a
-          >
+    <!-- PRICE LIST / CATALOG -->
+    <section class="section" id="produk">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">💙 Price List 💛</span>
+          <h2 class="section-title">Katalog Produk Terpopuler</h2>
+          <p class="section-desc">Pilih produk favoritmu. Klik pada gambar untuk memperbesar detail produk.</p>
         </div>
 
-        <div
-          style="
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.75rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-          "
-        >
-          <img
-            src="assets/stiker.jpeg"
-            alt="Logo PENS"
-            style="width: 100px; margin: 0 auto"
-          />
-          <div
-            style="
-              font-size: 12px;
-              font-weight: 700;
-              text-transform: uppercase;
-              letter-spacing: 0.08em;
-              color: var(--muted);
-            "
-          >
-            Sticker Pack
+        <div class="products-grid">
+          <!-- Keychain -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="assets/ganci.jpeg" alt="Gantungan Kunci PENS Acrylic" class="zoomable-img" />
+            </div>
+            <span class="product-category">Keychain</span>
+            <h3 class="product-title">Ganci Akrilik PENS</h3>
+            <p class="product-desc-text">Gantungan kunci akrilik tebal dua sisi, anti luntur, dengan potongan presisi tinggi bertema PENS.</p>
+            <div class="product-price">Rp 8.000</div>
+            <a href="#kalkulator" class="btn btn-outline select-product-btn" data-product="ganci">Pilih & Pesan</a>
           </div>
-          <div
-            style="
-              font-size: 28px;
-              font-weight: 800;
-              color: var(--navy);
-              letter-spacing: -0.02em;
-            "
-          >
-            Rp 5.000
-          </div>
-          <a
-            href="#kontak"
-            class="btn btn-outline"
-            style="margin-top: 0.75rem; text-align: center; font-size: 13px"
-            >Pesan</a
-          >
-        </div>
 
-        <div
-          style="
-            border: 2px solid var(--navy);
-            border-radius: 12px;
-            padding: 1.75rem;
-            background: var(--navy);
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            position: relative;
-          "
-        >
-          <div
-            style="
-              position: absolute;
-              top: 12px;
-              right: 12px;
-              background: var(--yellow);
-              color: var(--navy);
-              font-size: 11px;
-              font-weight: 800;
-              padding: 3px 10px;
-              border-radius: 20px;
-            "
-          >
-            🔥 Best Deal
+          <!-- Sticker Pack -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="assets/stiker.jpeg" alt="Sticker Pack Coding Life" class="zoomable-img" />
+            </div>
+            <span class="product-category">Stickers</span>
+            <h3 class="product-title">Sticker Pack Coding</h3>
+            <p class="product-desc-text">Koleksi stiker anti air vinyl laminasi doff bertema developer, syntax, dan jargon teknik terkini.</p>
+            <div class="product-price">Rp 5.000</div>
+            <a href="#kalkulator" class="btn btn-outline select-product-btn" data-product="stiker">Pilih & Pesan</a>
           </div>
-          <img
-            src="assets/paket hemat.jpeg"
-            alt="Logo PENS"
-            style="width: 100px; margin: 0 auto"
-          />
-          <div
-            style="
-              font-size: 12px;
-              font-weight: 700;
-              text-transform: uppercase;
-              letter-spacing: 0.08em;
-              color: rgba(255, 255, 255, 0.55);
-            "
-          >
-            Bundle Package
-          </div>
-          <div
-            style="
-              font-size: 28px;
-              font-weight: 800;
-              color: var(--yellow);
-              letter-spacing: -0.02em;
-            "
-          >
-            Rp 12.500
-          </div>
-          <a
-            href="#kontak"
-            class="btn btn-yellow"
-            style="margin-top: 0.75rem; text-align: center; font-size: 13px"
-            >Pesan</a
-          >
-        </div>
 
-        <div
-          style="
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.75rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-          "
-        >
-          <div
-            style="
-              font-size: 12px;
-              font-weight: 700;
-              text-transform: uppercase;
-              letter-spacing: 0.08em;
-              color: var(--muted);
-            "
-          >
-            Custom Request
+          <!-- Bundle -->
+          <div class="product-card featured-card">
+            <div class="product-badge">🔥 Best Deal</div>
+            <div class="product-img-wrapper">
+              <img src="assets/paket hemat.jpeg" alt="Paket Hemat PENS Tech" class="zoomable-img" />
+            </div>
+            <span class="product-category">Bundle Package</span>
+            <h3 class="product-title">Paket Hemat PENS</h3>
+            <p class="product-desc-text">Paket bundling berisi 1 Ganci Akrilik + 1 Sticker Pack. Pilihan paling efisien untuk melengkapi dekorasi dev-kit Anda.</p>
+            <div class="product-price">Rp 12.500</div>
+            <a href="#kalkulator" class="btn btn-yellow select-product-btn" data-product="paket">Pilih & Pesan</a>
           </div>
-          <div
-            style="
-              font-size: 28px;
-              font-weight: 800;
-              color: var(--navy);
-              letter-spacing: -0.02em;
-            "
-          >
-            +Rp 500
+
+          <!-- Custom Request -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <!-- Inline Custom Request Tech Icon SVG -->
+              <svg viewBox="0 0 24 24" width="70" height="70" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-light);">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="product-category">Custom Order</span>
+            <h3 class="product-title">Custom Request</h3>
+            <p class="product-desc-text">Tambahkan teks kustom seperti nama, NRP, atau inisial jurusan Anda pada gantungan kunci akrilik.</p>
+            <div class="product-price">+Rp 500 <span style="font-size:0.75rem; color:var(--color-text-muted);">/pcs</span></div>
+            <a href="#kalkulator" class="btn btn-outline select-product-btn" data-product="custom">Pilih & Pesan</a>
           </div>
-          <div style="font-size: 11px; color: var(--muted); margin-top: -4px">
-            custom nama/desain sederhana
-          </div>
-          <a
-            href="#kontak"
-            class="btn btn-outline"
-            style="margin-top: 0.75rem; text-align: center; font-size: 13px"
-            >Pesan</a
-          >
         </div>
       </div>
-    </div>
+    </section>
 
-    <hr />
-
-    <!-- KONTAK -->
-    <div class="section" id="kontak">
-      <div class="section-label">Kontak & Pemesanan</div>
-      <div class="section-title">Hubungi Kami</div>
-      <p class="section-desc">
-        Order mudah dan cepat. Hubungi kami via WhatsApp atau media sosial di
-        bawah ini.
-      </p>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Cara Pemesanan</h3>
-          <p>
-            Hubungi kami via WhatsApp, sebutkan produk dan jumlah yang
-            diinginkan. Kami akan konfirmasi ketersediaan dan detail pembayaran.
-          </p>
-
-          <div class="contact-links">
-            <div class="contact-link">
-              <div
-                class="contact-icon"
-                style="background: #e8f5e9; font-size: 1.3rem"
-              >
-                💬
-              </div>
-              <div class="contact-link-text">
-                <span class="contact-platform">WhatsApp</span>
-                <span class="contact-handle">+62 815-1568-3419</span>
-              </div>
-            </div>
-            <div class="contact-link">
-              <div
-                class="contact-icon"
-                style="background: #fce4ec; font-size: 1.3rem"
-              >
-                📸
-              </div>
-              <div class="contact-link-text">
-                <span class="contact-platform">Tiktok</span>
-                <span class="contact-handle">@keyPENS</span>
-              </div>
-            </div>
-            <div class="contact-link">
-              <div
-                class="contact-icon"
-                style="background: #e8f4f8; font-size: 1.3rem"
-              >
-                📍
-              </div>
-              <div class="contact-link-text">
-                <span class="contact-platform">Lokasi</span>
-                <span class="contact-handle">kampus PSDKU Lamongan</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-visual">
-          <h4>Tim Penyusun</h4>
-          <ul class="team-list">
+    <!-- INTERACTIVE ORDER CALCULATOR -->
+    <section class="section" id="kalkulator">
+      <div class="container calculator-grid">
+        <div class="calc-intro">
+          <span class="section-label">⚡ Live Order Generator ⚡</span>
+          <h3>Formulir Pemesanan & Kalkulator Harga</h3>
+          <p class="section-desc">Rancang pesanan Anda di bawah ini secara instan. Sistem kami akan menjumlahkan total harga secara otomatis dan menyusun pesan WhatsApp yang rapi untuk dikirim.</p>
+          <ul class="calc-steps">
             <li>
-              <div class="team-num">25</div>
-              Elsa Lady Dia Fatma
+              <div class="step-number">1</div>
+              <p>Tentukan <strong>jumlah item</strong> yang ingin Anda beli pada kalkulator terminal.</p>
             </li>
             <li>
-              <div class="team-num">48</div>
-              Muhammad Rozaq Ma'ruf
+              <div class="step-number">2</div>
+              <p>Centang opsi <strong>Custom Request</strong> jika ingin menambahkan cetak nama kustom.</p>
             </li>
             <li>
-              <div class="team-num">53</div>
-              Ebenezer Puas Sihite
+              <div class="step-number">3</div>
+              <p>Klik tombol <strong>"Kirim via WhatsApp"</strong> untuk mengirim pesanan secara instan.</p>
             </li>
           </ul>
-          <div
-            style="
-              margin-top: 1.5rem;
-              padding-top: 1.5rem;
-              border-top: 1px solid rgba(255, 255, 255, 0.1);
-            "
-          >
-            <div
-              style="
-                font-size: 11px;
-                text-transform: uppercase;
-                letter-spacing: 0.08em;
-                color: rgba(255, 255, 255, 0.5);
-                margin-bottom: 8px;
-              "
-            >
-              Mata Kuliah
+        </div>
+
+        <div class="calc-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div style="font-size: 14px; font-weight: 600">Kewirausahaan</div>
-            <div
-              style="
-                font-size: 13px;
-                color: rgba(255, 255, 255, 0.6);
-                margin-top: 4px;
-              "
-            >
-              Dosen: Agung Teguh Setyadi S.Kom., M.Kom.
+            <div class="terminal-title">keyPENS_order_calc.sh</div>
+          </div>
+          <div class="terminal-body">
+            <!-- Item 1: Keychain -->
+            <div class="calc-item">
+              <div class="calc-item-info">
+                <span class="calc-item-title">Ganci Akrilik PENS</span>
+                <span class="calc-item-price">Rp 8.000 /pcs</span>
+              </div>
+              <div class="calc-qty-control">
+                <button type="button" class="qty-btn" onclick="adjustQty('ganci', -1)">-</button>
+                <span class="qty-val" id="qty-ganci">0</span>
+                <button type="button" class="qty-btn" onclick="adjustQty('ganci', 1)">+</button>
+              </div>
             </div>
-            <div
-              style="
-                font-size: 13px;
-                color: rgba(255, 255, 255, 0.5);
-                margin-top: 2px;
-              "
-            >
-              Tahun 2026
+
+            <!-- Item 2: Sticker Pack -->
+            <div class="calc-item">
+              <div class="calc-item-info">
+                <span class="calc-item-title">Sticker Pack Coding</span>
+                <span class="calc-item-price">Rp 5.000 /pcs</span>
+              </div>
+              <div class="calc-qty-control">
+                <button type="button" class="qty-btn" onclick="adjustQty('stiker', -1)">-</button>
+                <span class="qty-val" id="qty-stiker">0</span>
+                <button type="button" class="qty-btn" onclick="adjustQty('stiker', 1)">+</button>
+              </div>
             </div>
+
+            <!-- Item 3: Bundle -->
+            <div class="calc-item">
+              <div class="calc-item-info">
+                <span class="calc-item-title">Paket Hemat PENS</span>
+                <span class="calc-item-price">Rp 12.500 /pcs</span>
+              </div>
+              <div class="calc-qty-control">
+                <button type="button" class="qty-btn" onclick="adjustQty('paket', -1)">-</button>
+                <span class="qty-val" id="qty-paket">0</span>
+                <button type="button" class="qty-btn" onclick="adjustQty('paket', 1)">+</button>
+              </div>
+            </div>
+
+            <!-- Custom Request Toggle -->
+            <div class="calc-item">
+              <div class="calc-item-info">
+                <span class="calc-item-title">Custom Request Nama (+Rp 500)</span>
+                <span class="calc-item-price">Kustomisasi teks di produk</span>
+              </div>
+              <div class="calc-checkbox-wrapper">
+                <input type="checkbox" id="check-custom" class="calc-checkbox" onchange="toggleCustomInput()" />
+              </div>
+            </div>
+
+            <!-- Custom Text Input -->
+            <input type="text" id="input-custom-text" class="calc-input-text" placeholder="Masukkan nama/teks kustom Anda..." oninput="calculateTotal()" />
+
+            <!-- Total Price Row -->
+            <div class="calc-total-box">
+              <div class="calc-total-row">
+                <span class="calc-total-label">TOTAL ESTIMASI:</span>
+                <span class="calc-total-value" id="calc-total-val">Rp 0</span>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" class="btn btn-yellow" style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 14px;" onclick="sendOrder()">
+              🚀 Kirim Pesanan via WhatsApp
+            </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- CTA -->
-    <div class="cta-banner">
-      <div class="cta-text">
-        <h2>Siap Order Sekarang?</h2>
-        <p>Stok terbatas — jangan sampai kehabisan edisi favoritmu.</p>
+    <!-- PROMO VIDEO SECTION -->
+    <section class="section" id="video">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">🎥 Video Promosi</span>
+          <h2 class="section-title">Merchandise Anak Teknik Kelas Dunia</h2>
+          <p class="section-desc">Simak video review singkat produk kami untuk melihat kualitas gantungan kunci akrilik tebal dan detail stiker vinyl coding.</p>
+        </div>
+
+        <div class="promo-video-wrapper">
+          <div class="video-frame-bar">
+            <div class="terminal-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="video-frame-title">keyPENS_preview_video.mp4</div>
+          </div>
+          <video controls poster="assets/bg.png">
+            <source src="assets/key.mp4" type="video/mp4" />
+            Browser kamu tidak mendukung pemutaran video.
+          </video>
+        </div>
+
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <span class="highlight-icon">💻</span>
+            <h4>Desain Khas Programmer</h4>
+            <p>Desain stiker bernuansa syntax coding, Git, Linux, dan ikon teknologi populer yang disukai mahasiswa IT.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">🔑</span>
+            <h4>Akrilik Tebal & Presisi</h4>
+            <p>Gantungan kunci diproduksi menggunakan akrilik 2 lapis premium yang tebal dengan pemotongan mesin laser presisi.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">⚡</span>
+            <h4>Aplikasi Serbaguna</h4>
+            <p>Stiker sangat cocok ditempelkan di punggung laptop, botol minum (tumbler), motor, helm, maupun buku catatan kuliah.</p>
+          </div>
+        </div>
       </div>
-      <div class="btn-row">
-        <a href="#kontak" class="btn btn-yellow">Chat WhatsApp ↗</a>
-        <a
-          href="#produk"
-          class="btn"
-          style="
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-          "
-          >Lihat Produk</a
-        >
+    </section>
+
+    <!-- KONTAK & TEAM -->
+    <section class="section" id="kontak">
+      <div class="container contact-grid">
+        <div class="contact-info-block">
+          <span class="section-label">📍 Hubungi Kami</span>
+          <h3>Kontak & Pemesanan Manual</h3>
+          <p class="section-desc">Ada pertanyaan sebelum membeli atau ingin memesan secara manual tanpa menggunakan kalkulator? Silakan hubungi tim kami di saluran berikut:</p>
+
+          <div class="contact-channels">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+6281515683419?text=Halo%20saya%20ingin%20tanya%20merchandise%20keyPENS" target="_blank" class="contact-card">
+              <div class="contact-badge-icon" style="background: rgba(37, 211, 102, 0.15); color: #25d366;">
+                💬
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label-text">WhatsApp Order</span>
+                <span class="contact-val-text">+62 815-1568-3419</span>
+              </div>
+            </a>
+
+            <!-- Tiktok -->
+            <a href="https://tiktok.com/@keyPENS" target="_blank" class="contact-card">
+              <div class="contact-badge-icon" style="background: rgba(254, 44, 85, 0.15); color: #fe2c55;">
+                📸
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label-text">TikTok Shop & Videos</span>
+                <span class="contact-val-text">@keyPENS</span>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-badge-icon" style="background: rgba(14, 165, 233, 0.15); color: #0ea5e9;">
+                📍
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label-text">Lokasi Produksi</span>
+                <span class="contact-val-text">Kampus PSDKU PENS Lamongan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal Styled Team Information -->
+        <div class="team-terminal">
+          <h4>[System Info: Team Metadata]</h4>
+          <ul class="team-list-terminal">
+            <li class="team-member-row">
+              <span class="terminal-prompt">psdku@pens:~$</span> finger member_25
+              <div class="member-details">
+                NRP: <strong>3921600025</strong><br>
+                Nama: <strong>Elsa Lady Dia Fatma</strong><br>
+                Jurusan: <strong>D3 Teknik Informatika</strong>
+              </div>
+            </li>
+            <li class="team-member-row">
+              <span class="terminal-prompt">psdku@pens:~$</span> finger member_48
+              <div class="member-details">
+                NRP: <strong>3921600048</strong><br>
+                Nama: <strong>Muhammad Rozaq Ma'ruf</strong><br>
+                Jurusan: <strong>D3 Teknik Informatika</strong>
+              </div>
+            </li>
+            <li class="team-member-row">
+              <span class="terminal-prompt">psdku@pens:~$</span> finger member_53
+              <div class="member-details">
+                NRP: <strong>3921600053</strong><br>
+                Nama: <strong>Ebenezer Puas Sihite</strong><br>
+                Jurusan: <strong>D3 Teknik Informatika</strong>
+              </div>
+            </li>
+          </ul>
+
+          <div class="course-meta-terminal">
+            Mata Kuliah: <span class="cyan">Kewirausahaan</span><br>
+            Dosen Pengampu: <span class="cyan">Agung Teguh Setyadi S.Kom., M.Kom.</span><br>
+            Tahun Ajaran: 2026 / Genap
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- FOOTER CTA BANNER -->
+    <section class="cta-banner-section">
+      <div class="container cta-content">
+        <div class="cta-text">
+          <h2>Siap Tampil Beda Kampus?</h2>
+          <p>Edisi terbatas untuk mahasiswa aktif PENS. Lengkapi dev-kit kamu dengan ganci akrilik dan stiker keren sekarang!</p>
+        </div>
+        <div class="cta-btns">
+          <a href="#kalkulator" class="btn btn-yellow">Mulai Kalkulasi Pesanan</a>
+          <a href="#produk" class="btn btn-outline">Lihat Katalog</a>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer-left">
-        PENS Tech Merch
-        <div class="footer-meta">
-          Kewirausahaan — Agung Teguh Setyadi S.Kom., M.Kom. — 2026
+      <div class="container footer-container">
+        <div class="footer-info">
+          <span class="footer-brand">PENS Tech Merch</span>
+          <span class="footer-meta">&copy; 2026 Kewirausahaan PSDKU PENS Lamongan. All Rights Reserved.</span>
         </div>
+        <ul class="footer-links">
+          <li><a href="https://tiktok.com/@keyPENS" target="_blank">TikTok</a></li>
+          <li><a href="https://wa.me/+6281515683419" target="_blank">WhatsApp</a></li>
+          <li><a href="https://shopee.co.id" target="_blank">Shopee</a></li>
+        </ul>
       </div>
-      <ul class="footer-links">
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">WhatsApp</a></li>
-        <li><a href="#">Shopee</a></li>
-      </ul>
     </footer>
+
+    <!-- LIGHTBOX FOR IMAGE PREVIEW -->
+    <div class="lightbox" id="lightboxModal">
+      <img class="lightbox-content" id="lightboxImg" src="" alt="Detail Produk" />
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+      // State Management
+      const productPrices = {
+        ganci: 8000,
+        stiker: 5000,
+        paket: 12500,
+        custom: 500
+      };
+
+      const orderQuantities = {
+        ganci: 0,
+        stiker: 0,
+        paket: 0
+      };
+
+      // Theme Management
+      const themeToggleBtn = document.getElementById('themeToggle');
+      const themeIcon = document.getElementById('themeIcon');
+      
+      // Load preference or default to dark
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      updateThemeIcon(savedTheme);
+
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+      });
+
+      function updateThemeIcon(theme) {
+        if (theme === 'dark') {
+          // Show Sun SVG for switching to Light mode
+          themeIcon.innerHTML = `
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          `;
+        } else {
+          // Show Moon SVG for switching to Dark mode
+          themeIcon.innerHTML = `
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          `;
+        }
+      }
+
+      // Responsive Mobile Navbar Hamburgers
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const navLinks = document.getElementById('navLinks');
+
+      hamburgerBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburgerBtn.classList.toggle('active');
+      });
+
+      // Close mobile menu on clicking links
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          hamburgerBtn.classList.remove('active');
+        });
+      });
+
+      // Scroll background effect for Navbar
+      window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+          navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.15)';
+          navbar.style.padding = '0.75rem 0';
+        } else {
+          navbar.style.boxShadow = 'none';
+          navbar.style.padding = '1rem 0';
+        }
+      });
+
+      // Live Calculator quantity adjustment
+      function adjustQty(productKey, change) {
+        const currentQty = orderQuantities[productKey];
+        const newQty = Math.max(0, currentQty + change);
+        orderQuantities[productKey] = newQty;
+        
+        document.getElementById(`qty-${productKey}`).innerText = newQty;
+        calculateTotal();
+      }
+
+      // Quick-select from catalog button
+      document.querySelectorAll('.select-product-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const productKey = btn.getAttribute('data-product');
+          if (productKey === 'custom') {
+            document.getElementById('check-custom').checked = true;
+            toggleCustomInput();
+          } else {
+            // Set qty of chosen product to 1 if it is 0
+            if (orderQuantities[productKey] === 0) {
+              orderQuantities[productKey] = 1;
+              document.getElementById(`qty-${productKey}`).innerText = 1;
+            }
+          }
+          calculateTotal();
+        });
+      });
+
+      // Toggle text input for custom name request
+      function toggleCustomInput() {
+        const customChecked = document.getElementById('check-custom').checked;
+        const customInput = document.getElementById('input-custom-text');
+        
+        if (customChecked) {
+          customInput.style.display = 'block';
+          customInput.focus();
+        } else {
+          customInput.style.display = 'none';
+          customInput.value = '';
+        }
+        calculateTotal();
+      }
+
+      // Calculate total price live
+      function calculateTotal() {
+        let total = 0;
+        
+        // Sum products
+        total += orderQuantities.ganci * productPrices.ganci;
+        total += orderQuantities.stiker * productPrices.stiker;
+        total += orderQuantities.paket * productPrices.paket;
+
+        // Custom name charge
+        const isCustomChecked = document.getElementById('check-custom').checked;
+        if (isCustomChecked) {
+          // Custom request charge applies per keychain ordered (or flat fee if no keychains selected)
+          const keychainsCount = orderQuantities.ganci + orderQuantities.paket;
+          const customMultiplier = keychainsCount > 0 ? keychainsCount : 1;
+          total += customMultiplier * productPrices.custom;
+        }
+
+        // Format to Indonesian Rupiah representation
+        const formattedTotal = 'Rp ' + total.toLocaleString('id-ID');
+        document.getElementById('calc-total-val').innerText = formattedTotal;
+        return total;
+      }
+
+      // Send order to WhatsApp with custom pre-filled message
+      function sendOrder() {
+        const total = calculateTotal();
+        if (total === 0) {
+          alert('Silakan pilih setidaknya satu produk untuk dipesan.');
+          return;
+        }
+
+        let message = 'Halo, saya tertarik memesan merchandise PENS Tech Merch:\n\n';
+        
+        if (orderQuantities.ganci > 0) {
+          message += `- ${orderQuantities.ganci} pcs Ganci Akrilik PENS (Rp ${(orderQuantities.ganci * productPrices.ganci).toLocaleString('id-ID')})\n`;
+        }
+        if (orderQuantities.stiker > 0) {
+          message += `- ${orderQuantities.stiker} pcs Sticker Pack Coding (Rp ${(orderQuantities.stiker * productPrices.stiker).toLocaleString('id-ID')})\n`;
+        }
+        if (orderQuantities.paket > 0) {
+          message += `- ${orderQuantities.paket} pcs Paket Hemat PENS (Rp ${(orderQuantities.paket * productPrices.paket).toLocaleString('id-ID')})\n`;
+        }
+
+        const isCustomChecked = document.getElementById('check-custom').checked;
+        if (isCustomChecked) {
+          const customText = document.getElementById('input-custom-text').value.trim() || '(Tanpa Nama)';
+          message += `- Opsi Custom Nama: "${customText}"\n`;
+        }
+
+        message += `\n*Total Estimasi: Rp ${total.toLocaleString('id-ID')}*\n\nMohon konfirmasi ketersediaan barang dan metode pembayarannya. Terima kasih!`;
+        
+        // Encode message for URL
+        const encodedMessage = encodeURIComponent(message);
+        const waUrl = `https://wa.me/+6281515683419?text=${encodedMessage}`;
+        
+        // Open WA chat
+        window.open(waUrl, '_blank');
+      }
+
+      // Lightbox Image Viewer Logic
+      const lightbox = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+
+      document.querySelectorAll('.zoomable-img').forEach(img => {
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightbox.style.display = 'flex';
+        });
+      });
+
+      lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+      });
+    </script>
   </body>
 </html>
